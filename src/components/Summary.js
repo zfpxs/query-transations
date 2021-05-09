@@ -9,9 +9,9 @@ const Summary = (props) => {
       transation && 
       <>
         <SummaryItem label="Hash" text={transation.hash}/>
-        <SummaryItem label="Confirmations" text={transation.hash}/>
-        <SummaryItem label="Height" text={transation.height} />
         <SummaryItem label="Timestamp" text= {transation.time ? formatTime(transation.time) : ''} />
+        <SummaryItem label="Height" text={transation.height} />
+        <SummaryItem label="Number of Transactions" text={transation.n_tx}/>
         <SummaryItem label="Merkle root" text={transation.mrkl_root} />
         <SummaryItem label="weight" text={transation.weight} />
       </>

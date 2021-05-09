@@ -33,6 +33,7 @@ const App = () => {
     total,
     list,
   } = state;
+  console.log(transation, "=======")
   return (
     <div className="App">
       <Header title="Blockchain.com" />
